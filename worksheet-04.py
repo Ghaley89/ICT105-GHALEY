@@ -1,3 +1,4 @@
+'''
 #Session 7 
 #Exercise 1: Student Registration 
 # Define the function
@@ -12,11 +13,8 @@ course_enrollment("S1234", "Alice", "Brown", "CSE101", "Introduction to Computer
 course_enrollment("S5678", "Bob", "Smith", "CSE102", "Data Structures", action='Add')
 
 
-'''
-
-
-Student Action 
-Modified function to handle Echo, Amend, and Delete
+#Student Action 
+#Modified function to handle Echo, Amend, and Delete
 
 def course_enrollment(student_id, first_name, last_name, course_id, course_name, action="Echo"):
     if action == 'Amend':
@@ -32,26 +30,21 @@ course_enrollment("S2002", "Diana", "Evans", "CS104", "Databases", action="Amend
 
 course_enrollment("S2003", "Ethan", "Ford", "CS105", "Operating Systems", action="Delete")
 
+#Exercise 2 
+#Student Course List 
 
-
-
-
-
-
-
-Exercise 2 
-Student Course List 
-1.
+'''
 def collect_courses(student_id, student_name):
-    print(f"\nWelcome {student_name} (ID: {student_id})")
+    print(f"\nWelcome {student_name} (ID: {student_id})") 
+
+#Collect 4 course IDs
     
-    # Collect 4 course IDs
     courses = []
     for i in range(4):
         course_id = input(f"Enter Course {i + 1} ID: ")
         courses.append(course_id)
 
-    # Ask for semester and year
+#Ask for semester and year
     semester = input("Enter Semester (e.g., Semester 1): ")
     year = input("Enter Year (e.g., 2025): ")
 
@@ -68,6 +61,7 @@ sid = input("Enter Student ID: ")
 name = input("Enter Student Name: ")
 collect_courses(sid, name)
 
+'''
 2.
 def store_course_info(student_id, student_name, **courses):
     print(f"\n- Student Course Details -")
@@ -84,8 +78,8 @@ def store_course_info(student_id, student_name, **courses):
         
 store_course_info("S2022", "Nar", ICT101="Introduction of Computer", ICT102="Applied Communication", MTH104="Discrete Mathematics", ENG101="English Communication")
 
-Exercise 3 
-Tkinter calculator 
+#Exercise 3 
+#Tkinter calculator 
 
 import tkinter as tk
 from tkinter import messagebox
@@ -139,9 +133,8 @@ result_label.grid(row=4, column=0, columnspan=2, pady=10)
 root.mainloop()
 
 
-Session 6
-
-Student Profile-User Class
+#Session 6
+#Student Profile-User Class
 class User:
     def __init__(self, first_name, last_name, email, username, date_of_birth, location):
         self.first_name = first_name
@@ -176,8 +169,7 @@ for user in [user1, user2, user3]:
     user.greet_user()
 
 
-Login Attempts 
-
+#Login Attempts 
 # Test login attempts
 class User:
     def __init__(self, first_name, last_name, email, username, date_of_birth, location):
@@ -222,7 +214,7 @@ user1.reset_login_attempts()
 print(f"Login attempts after reset: {user1.login_attempts}")
 
 
-Student Profile - Classroom 
+#Student Profile - Classroom 
 
 class Classroom:
     def __init__(self, classroom_name, classroom_location, seats_in_class):
@@ -266,8 +258,7 @@ classroom3.describe_classroom()
 classroom4.describe_classroom()
 
 
-Enrolled Students 
-
+#Enrolled Students 
 # Define the Classroom class with enrollment tracking
 class Classroom:
     def __init__(self, classroom_name, classroom_location, seats_in_class):
@@ -288,13 +279,12 @@ class Classroom:
         else:
             print(f"Not enough seats for {self.students_enrolled} students!")
         print()
-
-    # Method to set number of enrolled students
+# Method to set number of enrolled students
     def set_number_enrolled(self, number):
         self.students_enrolled = number
         print(f"Students enrolled set to: {self.students_enrolled}\n")
 
-    # Method to update number of enrolled students and log changes
+# Method to update number of enrolled students and log changes
     def update_number_enrolled(self, number, updated_by="System"):
         self.students_enrolled = number
         log_entry = {
@@ -304,7 +294,7 @@ class Classroom:
         self.audit_log.append(log_entry)
         print(f"Updated enrolled students to: {number} by {updated_by}\n")
 
-    # Show the audit log
+# Show the audit log
     def show_audit_log(self):
         print("Audit Log of Enrollment Changes:")
         for entry in self.audit_log:
@@ -333,8 +323,7 @@ classroom.checksize_classroom()
 classroom.show_audit_log()
 
 
-Classroom Equipment 
-
+#Classroom Equipment 
 # Base class
 class Classroom:
     def __init__(self, classroom_name, classroom_location, seats_in_class):
