@@ -1,7 +1,7 @@
 #Worksheet 5
 #Session 9
 #Exercise-1
-
+'''
 
 class FileManager:
     def __init__(self, filename):
@@ -24,16 +24,16 @@ class FileManager:
 
 # --- Execution / Test Cases ---
 if __name__ == "__main__":
-    # Test with a valid .txt file
+    
+# Test with a valid .txt file
     txt_manager = FileManager("python_summary.txt")
     txt_manager.write_summary()
 
-    # Test with a non-.txt file to trigger the else block
+# Test with a non-.txt file to trigger the else block
     csv_manager = FileManager("data.csv")
     csv_manager.write_summary() 
 
 
-'''
     def read_entire_file(self):
         """Read the entire content of the file at once and print it."""
         try:
@@ -69,14 +69,14 @@ if __name__ == "__main__":
 
     manager = FileManager(filename)
 
-    # Write summary if using summary.txt
+# Write summary if using summary.txt
     manager.write_summary()
 
-    # Perform both types of read operations
+# Perform both types of read operations
     manager.read_entire_file()
     manager.read_file_line_by_line() 
 
-Exercise 2
+#Exercise 2
 with open("learning_students.txt", "w") as file:
     file.write("Every learner must complete their assignments on time. "
                "A good learner always seeks to learn more. "
@@ -86,7 +86,7 @@ with open("learning_students.txt", "r") as file:
         modified_line = line.replace("learner", "student").replace("Learners", "Students")
         print(modified_line)
 
-Exercise 3
+#Exercise 3
 def get_numeric_input(prompt):
     while True:
         try:
@@ -106,7 +106,7 @@ if __name__ == "__main__":
     main()
 
 
-Exercise 4
+#Exercise 4
 
 def read_file(filename):
     try:
@@ -124,7 +124,7 @@ if __name__ == "__main__":
     main()
 
 
-Exercise 5
+#Exercise 5
 
 import json
 filename = "favourite_number.json"
@@ -176,7 +176,7 @@ if student_id in loaded_profiles:
     loaded_profiles[student_id]["dob"] = dob
     loaded_profiles[student_id]["email"] = email
 
-    # Save updated data back to the file
+# Save updated data back to the file
     with open(filename, "w") as file:
         json.dump(loaded_profiles, file, indent=4)
     
@@ -188,11 +188,9 @@ else:
 print("\nCurrent Data:")
 print(json.dumps(loaded_profiles, indent=4))
 
-Session 10
-
-Exercises 1.
-
-a.	Student_function.py (folder)
+#Session 10
+#Exercises 1.
+#a.	Student_function.py (folder)
 import csv
 
 def get_student_info(filename):
@@ -211,7 +209,7 @@ def get_student_info(filename):
         return ["File not found."]
     return result
 
-b. test_studentinfo.py (folder)
+#b. test_studentinfo.py (folder)
 import unittest
 from student_functions import get_student_info
 
@@ -231,7 +229,7 @@ class TestStudentInfo(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 
-Exercise 2:
+#Exercise 2:
 
 Employee.py
 class Employee:
@@ -261,7 +259,7 @@ class TestEmployee(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 
-Thereafter, we have to open the terminal and run 
+#Thereafter, we have to open the terminal and run 
 python test_studentinfo.py
 python test_employee.py
 
