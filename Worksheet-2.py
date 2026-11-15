@@ -19,9 +19,11 @@ print(units)
 units = ["Introduction to Programming", "Calculus I", "Data Structures and Algorithms", "Linear Algebra", "Physics I", "Chemistry I", "Bloggy I", "Microeconomics", "Macroeconomics", "Psychology I", "History I", "English Composition I", "Introduction to Philosophy", "Calculus II", "Discrete Mathematics"]
 units.sort()
 units=sorted(units)
-print(units)
+print(units) 
 
-'''
+oki
+
+#'''
 # list-reverse-Permanent sorting
 '''
 units = ["Introduction to Programming", "Calculus I", "Data Structures and Algorithms", "Linear Algebra", "Physics I", "Chemistry I", "Bloggy I", "Microeconomics", "Macroeconomics", "Psychology I", "History I", "English Composition I", "Introduction to Philosophy", "Calculus II", "Discrete Mathematics"]
