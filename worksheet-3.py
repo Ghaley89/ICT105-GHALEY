@@ -22,14 +22,16 @@ for dep, courses in departments.items():
     for c in courses:
         print(c) 
 
-
+'''
 #Lecturer Assignments.
+'''
 lecturer_assignments = {"Pema": ["CS101", "MATH101"], "Mr.Dorji": ["PHY101", "CHEM101"], "Dr.Tashi": ["ICT105"]}
 for lecturer,courses in lecturer_assignments.items():
     print(f"{lecturer} teaches the following courses:{courses}") 
-
+'''
 
 #Session 6 (User input loop).
+'''
 class_list = []
 while True:
     student_name = input("Enter student's name (or type 'exit' to finish): ")
@@ -53,10 +55,14 @@ print("\nRooms that can support the number of students:")
 for room in rooms:
     if room["capacity"] >= min_students:
         print(f"Room {room['room']} - Capacity: {room['capacity']}, Floor: {room['floor']}, Location: {room['location']}")
-'''
-# Exit program loop
-class_list = []
 
+ '''
+
+# Exit program loop
+'''
+class_list = []
+ 
+ 
 while True:
     student_name = input("Enter student's name ('quit', 'exit', or '0' to stop): ")
     if student_name.lower() in ['quit', 'exit', '0']:
@@ -71,7 +77,7 @@ for student in class_list:
 print(f"Total students: {len(class_list)}")
 print(f"Exit parameter: {student_name}")
 
-'''
+
 #Using an active variable to control the loop
 class_list = []
 active = True
@@ -89,8 +95,11 @@ for student in class_list:
     print(student)
 print(f"Total students: {len(class_list)}")
 
+'''
 
 #Exiting when reaching max capacity using 
+'''
+
 class_list = []
 max_cap = int(input("Enter the maximum number of students allowed: "))
 
@@ -107,19 +116,30 @@ for student in class_list:
     print(student)
 print(f"Total students: {len(class_list)} (Max capacity: {max_cap})")
 
+'''
+
 #Infinite Loop – exit
-print("Start typing (exit)...")
+#'''
+print("Start typing (type 'exit' to stop):")
+
 line_count = 0
 
 try:
     while True:
         user_input = input()
+
+        if user_input.lower() == "exit":
+            break
+
         print(user_input)
         line_count += 1
+
 except KeyboardInterrupt:
     print("\nProgram interrupted by user.")
+
+finally:
     print(f"Total lines entered: {line_count}")
+'''
 
 END OF WORKSHEET 3. THANK YOU. 
 
-'''
