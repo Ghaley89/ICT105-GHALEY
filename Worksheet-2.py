@@ -1,78 +1,102 @@
+
+#Worksheet-2 Sessions-3
+
+'''
+#Lists - basic
 units = ["Introduction to Programming", "Calculus I", "Data Structures and Algorithms", "Linear Algebra", "Physics I", "Chemistry I", "Bloggy I", "Microeconomics", "Macroeconomics", "Psychology I", "History I", "English Composition I", "Introduction to Philosophy", "Calculus II", "Discrete Mathematics"]
-print(units)
+print(units) 
 
-2.# Lists - sorted () 
+'''
 #List-sorted-Permanent sorting
+'''
+units = ["Introduction to Programming", "Calculus I", "Data Structures and Algorithms", "Linear Algebra", "Physics I", "Chemistry I", "Bloggy I", "Microeconomics", "Macroeconomics", "Psychology I", "History I", "English Composition I", "Introduction to Philosophy", "Calculus II", "Discrete Mathematics"]
 units.sort()
-print(units)
+print(units) 
 
+'''
 #Temporary sorting
+#'''
+units = ["Introduction to Programming", "Calculus I", "Data Structures and Algorithms", "Linear Algebra", "Physics I", "Chemistry I", "Bloggy I", "Microeconomics", "Macroeconomics", "Psychology I", "History I", "English Composition I", "Introduction to Philosophy", "Calculus II", "Discrete Mathematics"]
+units.sort()
 units=sorted(units)
 print(units)
 
-3. Lists - reverse() 
+'''
 # list-reverse-Permanent sorting
+'''
+units = ["Introduction to Programming", "Calculus I", "Data Structures and Algorithms", "Linear Algebra", "Physics I", "Chemistry I", "Bloggy I", "Microeconomics", "Macroeconomics", "Psychology I", "History I", "English Composition I", "Introduction to Philosophy", "Calculus II", "Discrete Mathematics"]
+units.sort()
 units.sort(reverse=True)
 print(units)
-
+'''
 # list-reverse-Temporary sorting
+'''
+units = ["Introduction to Programming", "Calculus I", "Data Structures and Algorithms", "Linear Algebra", "Physics I", "Chemistry I", "Bloggy I", "Microeconomics", "Macroeconomics", "Psychology I", "History I", "English Composition I", "Introduction to Philosophy", "Calculus II", "Discrete Mathematics"]
+units.sort()
 units=sorted(units,reverse=True)
 print(units)
-
-
-4. Lists - sort() 
-
-Lists-Create useable coding
-1.1 
+'''
+ 
+#Lists-Create useable coding(1.1) 
+'''
 units. sort()
 print(units)
 
 print("The following courses are available for expression of interest if the students meet the prerequisites:")
-1.2
-
-#Remove the  2nd course from the list?
-
+'''
+#1.2 Remove the  2nd course from the list?
+'''
+units = ["Introduction to Programming", "Calculus I", "Data Structures and Algorithms", "Linear Algebra", "Physics I", "Chemistry I", "Bloggy I", "Microeconomics", "Macroeconomics", "Psychology I", "History I", "English Composition I", "Introduction to Philosophy", "Calculus II", "Discrete Mathematics"]
+units.sort()
 del units[2]
 print(“After del:”,units)
 
-#Message announcement after removing one of the course from the list?
-
 print(“Dear student the course title Data Structures and Algorithms is replace by a new course”)
-
+'''
 #Replace with New course in the list?
+'''
+units = ["Introduction to Programming", "Calculus I", "Data Structures and Algorithms", "Linear Algebra", "Physics I", "Chemistry I", "Bloggy I", "Microeconomics", "Macroeconomics", "Psychology I", "History I", "English Composition I", "Introduction to Philosophy", "Calculus II", "Discrete Mathematics"]
+units.sort()
 units.insert(2,"Nurshing")
 print(units)
 
-#Print the messages showing both the original course and the new course, with a message to confirm the withdrawn course and new course. 
-
+'''
+ '''
 print(“Original units:”,units)
-
-3. Three new courses added to the list?
+'''
+#3. Three new courses added to the list?
+'''
+units = ["Introduction to Programming", "Calculus I", "Data Structures and Algorithms", "Linear Algebra", "Physics I", "Chemistry I", "Bloggy I", "Microeconomics", "Macroeconomics", "Psychology I", "History I", "English Composition I", "Introduction to Philosophy", "Calculus II", "Discrete Mathematics"]
+units.sort()
 units.insert(0,"apple")
 print(units)
-
+'''
+'''
 units.insert(6,"orange")
 print(units)
-
+'''
+'''
 units.append(“Banana”)
 print(units)
-
+'''
+'''
 print(“Dear student Available courses for this semester are apple,orange and Banana 
 due to technical and room availability issues ”)
-
-4. Use pop() to remove four courses from your list one at a time. 
-
+'''
+#4. Use pop() to remove four courses from your list one at a time. 
+'''
+units = ["Introduction to Programming", "Calculus I", "Data Structures and Algorithms", "Linear Algebra", "Physics I", "Chemistry I", "Bloggy I", "Microeconomics", "Macroeconomics", "Psychology I", "History I", "English Composition I", "Introduction to Philosophy", "Calculus II", "Discrete Mathematics"]
+units.sort()
 units= units.pop(7)
 print("After pop:", units)
 print("Popped item:", units)
+'''
 
- 
-Tuples and Loops 
+#Tuples and Loops 
+'''
 units=[(1, "Introduction to Programming"),(2, "Calculus I"), (3, "Data Structures and Algorithms"),(4, "Linear Algebra"),(5, "Physics I")]
-
 units_names=[]
 units_id=[]
-
 print("Unit List:")
 print()
 
@@ -82,17 +106,15 @@ for unit in units:
     
     print(f"{unit_id:},{unit_name}")
     print()
+'''
+#Session-4
 
-
-
-Session-4
-
-1 A .List of Departments 
+#1 A .List of Departments 
+'''
 departments = [[1, “Computer Science”],[2, “Mathematics”],[3, “Computer Science”],[4,”Mathematics”], [5, “Physics”],[6, “Chemistry”], [7, “Biology”],[8, “Economics”],[9,”Economics”], [10, “Psychology”],[11, “History”],[12, “English”], [13, “Philosophy”], [14, “Mathematics”], [15, “Computer Science”]]
-
-
-B. Loops 
-
+'''
+#B. Loops 
+'''
 while True:
     num=input(“Enter course_id, quit or 0”)
     if(num== “quit” or num== “0”):
@@ -100,8 +122,9 @@ while True:
         
     else:
             print(num)
-C. Conditional statements 
-
+'''
+#C. Conditional statements 
+'''
 while True:
     num=input("Enter course_ID, quit or 0")
     if (int(num)==courses[0]):
@@ -112,9 +135,9 @@ while True:
         break
 if (var==False):
     print(f"courses with id {num} not found")
-
-D.Search for department
-
+'''
+#D.Search for department
+'''
 while True:
     num = input("Enter a course ID (1–15) quit or 0")
 
@@ -142,9 +165,9 @@ while True:
     else:
         print(f"The value '{course_id}' has been used to exit.")
         break
-
-2. Creating a Course Information Retrieval System 
-
+'''
+#2. Creating a Course Information Retrieval System 
+'''
 courses = [[1, "Introduction to Programming", "Computer Science", "None"],
 [2, "Calculus I", "Mathematics", "None"],
 [3, "Data Structures and Algorithms", "Computer Science", "Introduction to Programming"],
@@ -193,3 +216,9 @@ while True:
             print(f"Course ID {course_id} not found.")
     else:
         print(f"Course ID {course_id} is out of range. Please enter a valid ID between 1 and 15.")
+
+'''
+
+THANK YOU 
+
+'''

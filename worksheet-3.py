@@ -1,29 +1,37 @@
+'''
 #worksheet-3
 #Student Course Enrollment.
-Course_enrollments={1:["ICT101"],2:["ICT102"],3:["ICT103"],4:["ICT104"],5:["ICT105"]}
+Course_enrollments = {1: ["ICT101"],2: ["ICT102"],3: ["ICT103"],4: ["ICT104"],5: ["ICT105"],}
+
 for num, info in Course_enrollments.items():
     print(f"student ID {num}:")
     for Course in info:
-        print(Course)
-
+        print(Course) 
+        
 #Class Schedule.(Whole list)
 departments={"computer science":["CS101", "introduction to computer science"],"Mathematics":["MATH101", "Calculus I"]," Physics":["PHY101", "General Physics I"], "Chemistry":["CHEM101", "General Chemistry"], "computer Hardware":["ICT105", "hardware"]}
 print("Printing whole list")
 for dep, courses in departments.items():
-    print(f"department {dep} has these courses registered:{courses}")
+    print(f"department {dep} has these courses registered:{courses}") 
 
 # Individual list 
+departments={"computer science":["CS101", "introduction to computer science"],"Mathematics":["MATH101", "Calculus I"]," Physics":["PHY101", "General Physics I"], "Chemistry":["CHEM101", "General Chemistry"], "computer Hardware":["ICT105", "hardware"]}
 print("Print individual items in list")
 for dep, courses in departments.items():
     print(f"department {dep}has these courses registered:")
     for c in courses:
-        print(c)
+        print(c) 
+
+'''
 #Lecturer Assignments.
+'''
 lecturer_assignments = {"Pema": ["CS101", "MATH101"], "Mr.Dorji": ["PHY101", "CHEM101"], "Dr.Tashi": ["ICT105"]}
 for lecturer,courses in lecturer_assignments.items():
-    print(f"{lecturer} teaches the following courses:{courses}")
+    print(f"{lecturer} teaches the following courses:{courses}") 
+'''
 
 #Session 6 (User input loop).
+'''
 class_list = []
 while True:
     student_name = input("Enter student's name (or type 'exit' to finish): ")
@@ -48,9 +56,13 @@ for room in rooms:
     if room["capacity"] >= min_students:
         print(f"Room {room['room']} - Capacity: {room['capacity']}, Floor: {room['floor']}, Location: {room['location']}")
 
-# Exit program loop
-class_list = []
+ '''
 
+# Exit program loop
+'''
+class_list = []
+ 
+ 
 while True:
     student_name = input("Enter student's name ('quit', 'exit', or '0' to stop): ")
     if student_name.lower() in ['quit', 'exit', '0']:
@@ -83,8 +95,11 @@ for student in class_list:
     print(student)
 print(f"Total students: {len(class_list)}")
 
+'''
 
 #Exiting when reaching max capacity using 
+'''
+
 class_list = []
 max_cap = int(input("Enter the maximum number of students allowed: "))
 
@@ -101,20 +116,30 @@ for student in class_list:
     print(student)
 print(f"Total students: {len(class_list)} (Max capacity: {max_cap})")
 
+'''
+
 #Infinite Loop – exit
-print("Start typing (exit)...")
+#'''
+print("Start typing (type 'exit' to stop):")
+
 line_count = 0
 
 try:
     while True:
         user_input = input()
+
+        if user_input.lower() == "exit":
+            break
+
         print(user_input)
         line_count += 1
+
 except KeyboardInterrupt:
     print("\nProgram interrupted by user.")
+
+finally:
     print(f"Total lines entered: {line_count}")
+'''
 
+END OF WORKSHEET 3. THANK YOU. 
 
-# END OF WORKSHEET 3. THANK YOU. 
-
-Nar get_shapepoly()
