@@ -1,14 +1,14 @@
 #Worksheet 5
 #Session 9
 #Exercise-1
-'''
-
+#'''
 class FileManager:
     def __init__(self, filename):
         self.filename = filename
 
     def write_summary(self):
-    """Write a short summary about Python into the file (only if it's a .txt file)."""
+    "Write a short summary about Python into the file (only if it's a .txt file)."""
+
         if self.filename.endswith(".txt"):
             try:
                 with open(self.filename, 'w') as file:
@@ -16,12 +16,17 @@ class FileManager:
                     file.write("It supports object-oriented programming.\n")
                     file.write("You can handle files and exceptions in Python.\n")
                     file.write("Python is widely used in data science and web development.\n")
+
                 print(f"Summary successfully written to '{self.filename}'.\n")
+
             except (IOError, PermissionError) as e:
                 print(f"Error writing to file: {e}")
-        else:
-            print("Skipping writing because the file is not a .txt summary file.\n")
 
+        else:
+            print("Skipping writing because the file is not a .txt summary file.\n") 
+
+
+'''
 # --- Execution / Test Cases ---
 if __name__ == "__main__":
     
@@ -58,10 +63,9 @@ if __name__ == "__main__":
             print(f"Error: File '{self.filename}' not found.")
         except PermissionError:
             print(f"Error: Permission denied to read '{self.filename}'.") 
-
-
-
+'''
 # Main program
+'''
 if __name__ == "__main__":
     # Choose file to work with: summary.txt or students.csv
     filename = "summary.txt"  
@@ -87,6 +91,7 @@ with open("learning_students.txt", "r") as file:
         print(modified_line)
 
 #Exercise 3
+
 def get_numeric_input(prompt):
     while True:
         try:
@@ -262,10 +267,5 @@ if __name__ == '__main__':
 #Thereafter, we have to open the terminal and run 
 python test_studentinfo.py
 python test_employee.py
-
-
-'''
-
-Thank you
 
 '''

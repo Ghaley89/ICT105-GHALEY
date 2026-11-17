@@ -32,9 +32,7 @@ course_enrollment("S2003", "Ethan", "Ford", "CS105", "Operating Systems", action
 
 #Exercise 2 
 #Student Course List 
-
-'''
-def collect_courses(student_id, student_name):
+1
     print(f"\nWelcome {student_name} (ID: {student_id})") 
 
 #Collect 4 course IDs

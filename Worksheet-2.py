@@ -4,21 +4,23 @@
 #Lists - basic
 units = ["Introduction to Programming", "Calculus I", "Data Structures and Algorithms", "Linear Algebra", "Physics I", "Chemistry I", "Bloggy I", "Microeconomics", "Macroeconomics", "Psychology I", "History I", "English Composition I", "Introduction to Philosophy", "Calculus II", "Discrete Mathematics"]
 print(units) 
-"""
+
 #List-sorted-Permanent sorting
 units = ["Introduction to Programming", "Calculus I", "Data Structures and Algorithms", "Linear Algebra", "Physics I", "Chemistry I", "Bloggy I", "Microeconomics", "Macroeconomics", "Psychology I", "History I", "English Composition I", "Introduction to Philosophy", "Calculus II", "Discrete Mathematics"]
 units.sort()
 print(units) 
 """
 #Temporary sorting
-
+#"""
 units = ["Introduction to Programming", "Calculus I", "Data Structures and Algorithms", "Linear Algebra", "Physics I", "Chemistry I", "Bloggy I", "Microeconomics", "Macroeconomics", "Psychology I", "History I", "English Composition I", "Introduction to Philosophy", "Calculus II", "Discrete Mathematics"]
 units.sort()
 units=sorted(units)
-print(units) 
+print(f"Sorted list of units: {units}")
+#print(units) 
+
 """
 # list-reverse-Permanent sorting
-"""
+
 units = ["Introduction to Programming", "Calculus I", "Data Structures and Algorithms", "Linear Algebra", "Physics I", "Chemistry I", "Bloggy I", "Microeconomics", "Macroeconomics", "Psychology I", "History I", "English Composition I", "Introduction to Philosophy", "Calculus II", "Discrete Mathematics"]
 units.sort()
 units.sort(reverse=True)

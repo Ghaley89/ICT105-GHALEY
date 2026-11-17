@@ -1,0 +1,4 @@
+Python is easy to learn and powerful.
+It supports object-oriented programming.
+You can handle files and exceptions in Python.
+Python is widely used in data science and web development.
